@@ -14,3 +14,58 @@ header {
   padding: 1em;
   text-align: center;
 }
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.post {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.post a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

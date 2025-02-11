@@ -3,55 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memory Lane Blog</title>
+    <title>Technology Blog</title>
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Memory Lane Blog</h1>
+      <h1>Welcome to My Technology Blog</h1>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="post.html?id=1">AI Post</a>
+        <a href="post.html?id=2">Blockchain Post</a>
+        <a href="post.html?id=3">5G Post</a>
       </nav>
     </header>
 
-    <main>
-      <h2>Recent Technology Posts</h2>
-      <section class="posts">
-        <article class="post">
-          <h3><a href="post.html?id=1">The Rise of AI in 2025</a></h3>
-          <p class="post-excerpt">
-            Artificial Intelligence is transforming industries in 2025. Here's
-            how it's changing the way we live...
-          </p>
-          <a href="post.html?id=1">Read More</a>
-        </article>
-
-        <article class="post">
-          <h3><a href="post.html?id=2">The Future of Quantum Computing</a></h3>
-          <p class="post-excerpt">
-            Quantum computing promises to revolutionize industries. What does
-            the future hold for this technology?
-          </p>
-          <a href="post.html?id=2">Read More</a>
-        </article>
-
-        <article>
-          <h3>
-            <a href="post.html?id=3">5G: The Next Generation of Connectivity</a>
-          </h3>
-          <p class="post-excerpt">
-            5G is here and ready to reshape the world. Here's everything you
-            need to know about its impact...
-          </p>
-          <a href="post.html?id=3">Read More</a>
-        </article>
-      </section>
-    </main>
+    <div class="container">
+      <div class="post">
+        <img
+          src="images/AIpost.avif"
+          alt="Artificial Intelligence"
+          class="post-image"
+        />
+        <h2>The Rise of Artificial Intelligence</h2>
+        <p>
+          This post explores how AI is transforming industries and society. We
+          discuss advancements and ethical concerns.
+        </p>
+        <a href="post.html?id=1" class="read-more">Read More</a>
+      </div>
+      <div class="post">
+        <img
+          src="images/Blockage.avif"
+          alt="Blockchain Technology"
+          class="post-image"
+        />
+        <h2>How Blockchain is Changing the World</h2>
+        <p>
+          Blockchain technology has the potential to revolutionize how we secure
+          data and conduct transactions. Read on to learn more.
+        </p>
+        <a href="post.html?id=2" class="read-more">Read More</a>
+      </div>
+      <div class="post">
+        <img src="images/5Gpost.avif" alt="5G Technology" class="post-image" />
+        <h2>The Future of 5G Technology</h2>
+        <p>
+          5G technology promises faster internet speeds and better connectivity.
+          Find out how it will impact the way we live.
+        </p>
+        <a href="post.html?id=3" class="read-more">Read More</a>
+      </div>
+    </div>
 
     <footer>
-      <p>&copy; 2025 Memory Lane Blog. All rights reserved.</p>
+      <p>&copy; 2025 My Technology Blog</p>
     </footer>
 
     <script src="JS/script.js"></script>

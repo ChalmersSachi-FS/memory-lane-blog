@@ -7,58 +7,72 @@
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to My Technology Blog</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="post.html?id=1">AI Post</a>
-        <a href="post.html?id=2">Blockchain Post</a>
-        <a href="post.html?id=3">5G Post</a>
-      </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="/" class="navbar-logo">Tech - Blog</a>
+        <ul class="navbar-links">
+          <li><a href="/" class="home-button">Home</a></li>
+          <li><a href="post.html?id=1">The Rise AI</a></li>
+          <li><a href="post.html?id=2">Blockchain is Changing the World</a></li>
+          <li><a href="post.html?id=3">5G Technology</a></li>
+          <li><a href="post.html?id=4">Building an API</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- Main Content -->
     <div class="container">
-      <div class="post">
-        <img
-          src="images/AIpost.avif"
-          alt="Artificial Intelligence"
-          class="post-image"
-        />
-        <h2>The Rise of Artificial Intelligence</h2>
-        <p>
-          This post explores how AI is transforming industries and society. We
-          discuss advancements and ethical concerns.
-        </p>
-        <a href="post.html?id=1" class="read-more">Read More</a>
-      </div>
-      <div class="post">
-        <img
-          src="images/Blockage.avif"
-          alt="Blockchain Technology"
-          class="post-image"
-        />
-        <h2>How Blockchain is Changing the World</h2>
-        <p>
-          Blockchain technology has the potential to revolutionize how we secure
-          data and conduct transactions. Read on to learn more.
-        </p>
-        <a href="post.html?id=2" class="read-more">Read More</a>
-      </div>
-      <div class="post">
-        <img src="images/5Gpost.avif" alt="5G Technology" class="post-image" />
-        <h2>The Future of 5G Technology</h2>
-        <p>
-          5G technology promises faster internet speeds and better connectivity.
-          Find out how it will impact the way we live.
-        </p>
-        <a href="post.html?id=3" class="read-more">Read More</a>
+      <div class="posts">
+        <!-- Repeated post structure -->
+        <div id="article1" class="post">
+          <img
+            src="images/AIpost.avif"
+            alt="Artificial Intelligence"
+            class="post-image"
+          />
+          <h2>The Rise of Artificial Intelligence</h2>
+          <p>
+            This post explores how AI is transforming industries and society...
+          </p>
+          <a href="post.html?id=1" class="read-more">Read More</a>
+        </div>
+        <div id="article2" class="post">
+          <img src="images/Blockage.avif" alt="Blockchain" class="post-image" />
+          <h2>Blockchain is Changing the World</h2>
+          <p>
+            Learn how blockchain technology is revolutionizing finance,
+            healthcare, and more...
+          </p>
+          <a href="post.html?id=2" class="read-more">Read More</a>
+        </div>
+        <div id="article3" class="post">
+          <img
+            src="images/5Gpost.avif"
+            alt="5G Technology"
+            class="post-image"
+          />
+          <h2>5G Technology: The Future of Connectivity</h2>
+          <p>
+            5G networks promise faster speeds and better connectivity for all
+            devices...
+          </p>
+          <a href="post.html?id=3" class="read-more">Read More</a>
+        </div>
+        <div id="article4" class="post">
+          <img
+            src="images/BuildingAPI.jpg"
+            alt="Building an API"
+            class="post-image"
+          />
+          <h2>Building an API: A Beginner's Guide</h2>
+          <p>
+            This post covers the basics of creating an API and its importance in
+            modern development...
+          </p>
+          <a href="post.html?id=4" class="read-more">Read More</a>
+        </div>
       </div>
     </div>
-
-    <footer>
-      <p>&copy; 2025 My Technology Blog</p>
-    </footer>
-
-    <script src="JS/script.js"></script>
   </body>
 </html>

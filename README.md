@@ -17,3 +17,6 @@ I am updating my index.html file & post.html file with a new post that I am addi
 
 5:17pm
 I have updated my code and added a new post and picture there is an error with one of the pictures and the css between index.html & post.html is different which is getting on my nerves.
+
+2/27/26 TIME: 8:55am
+Getting a head start on assignment 4.6 Exercise, So I can focus on the last assignment for this last week of class.

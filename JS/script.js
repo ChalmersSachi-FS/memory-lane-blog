@@ -10,7 +10,7 @@ const posts = [
   {
     id: 2,
     title: "How Blockchain is Changing the World",
-    image: "images/Blockchain.avif",
+    image: "images/Blockage.avif", // Fixed image name
     date: "2025-01-10",
     content:
       "Blockchain technology is disrupting industries from finance to healthcare. Discover how it is changing the landscape of data security.",
@@ -39,18 +39,35 @@ const posts = [
     content:
       "API security is crucial in modern development. This post covers authentication methods, rate limiting, encryption, and best practices for securing your API from cyber threats.",
   },
+  {
+    id: 6,
+    title: "Understanding JSON Web Tokens (JWT)",
+    image: "images/JWTTokens.jpg",
+    date: "2025-02-23",
+    content:
+      "JSON Web Tokens (JWT) are a compact, URL-safe way of representing claims between two parties. This article explains how JWTs work & how they enhance security in authentication.",
+  },
 ];
 
-const urlParams = new URLSearchParams(window.location.search);
-const postId = parseInt(urlParams.get("id"));
+document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const postId = parseInt(urlParams.get("id"), 10);
 
-const post = posts.find((p) => p.id === postId);
+  const post = posts.find((p) => p.id === postId);
 
-if (post) {
-  document.getElementById("post-title").textContent = post.title;
-  document.getElementById("post-date-text").textContent = post.date;
-  document.getElementById("post-image").src = post.image;
-  document.getElementById("post-content").textContent = post.content;
-} else {
-  document.getElementById("post-content").textContent = "Post not found.";
-}
+  if (post) {
+    document.getElementById("post-title").textContent = post.title;
+    document.getElementById("post-date-text").textContent = post.date;
+
+    const postImage = document.getElementById("post-image");
+    if (postImage) {
+      postImage.src = post.image;
+      postImage.alt = post.title;
+    }
+
+    document.getElementById("post-content").textContent = post.content;
+  } else {
+    document.querySelector(".post-details").innerHTML =
+      "<p>Post not found.</p>";
+  }
+});
